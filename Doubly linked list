@@ -28,7 +28,7 @@ class Dll
             Node temp=head;
             while(temp.rlink!=null)
             {
-                temp.rlink=temp;
+                temp=temp.rlink;
             }
             temp.rlink=newNode;
             newNode.llink=temp;
@@ -81,9 +81,11 @@ class Main
         Dll L1=new Dll();
         Scanner scan=new Scanner(System.in);
         int choice;
+        System.out.println("1:Insert 2:Delete 3:Display ");
+        System.out.println("Enter 4 for EXIT");
         do
         {
-            System.out.println("1:Insert 2:Delete 3:Display ");
+            System.out.println("Enter your choice");
             choice=scan.nextInt();
             switch(choice)
             {
