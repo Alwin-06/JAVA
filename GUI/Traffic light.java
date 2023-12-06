@@ -33,8 +33,8 @@ class TrafficLight extends JPanel implements ActionListener {
 
         // Set initial colors
         red_c = Color.red;
-        yelo_c = Color.yellow;
-        gr_c = Color.green;
+        yellow_c = Color.yellow;
+        green_c = Color.green;
     }
 
     public void actionPerformed(ActionEvent e) {
@@ -68,11 +68,11 @@ class TrafficLight extends JPanel implements ActionListener {
         g.fillOval(320, 50, 50, 50);
 
         g.drawOval(320, 140, 50, 50);
-        g.setColor(yelo_c);
+        g.setColor(yellow_c);
         g.fillOval(320, 140, 50, 50);
 
         g.drawOval(320, 230, 50, 50);
-        g.setColor(gr_c);
+        g.setColor(green_c);
         g.fillOval(320, 230, 50, 50);
     }
 }
